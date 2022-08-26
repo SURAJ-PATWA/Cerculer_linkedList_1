@@ -21,8 +21,15 @@ public class Treverse_A_Circular_LinkedList_ {
     public static void printlist(Node head){
       if(head==null) return ;
         System.out.print(head.data+" ");// first element ko pahele he print karna haa
-        for(Node curr=head.next;curr!=head;curr=curr.next){
+        for(Node curr=head.next;curr!=head;curr=curr.next){      // ya  for na use karke while use kar sakte ho 
+                                                                    //Node curr=head.next;
+                                                                    // while(curr!=head){
+                                                                   // System.out.print(curr.data+" ");
+                                                                    //curr=curr.next;
+                                                                     //      }
             System.out.print(curr.data+" ");
+            
+             
         }
     }
 
